@@ -1,0 +1,306 @@
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 111;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+.grid{
+  margin: 0 auto;
+  padding: 0 5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-item-text{
+  position: relative;
+}
+.one > img{
+  border-top-left-radius: 10px;
+}
+.three > img{
+  border-top-right-radius: 10px;
+}
+.five > img{
+  border-bottom-left-radius: 10px;
+}
+.six > img{
+  border-bottom-right-radius: 10px;
+}
+.tow{
+  grid-row: span 3;
+}
+.one, .three, .five, .six{
+  height: 300px;
+}
+.effect{
+  transition: all 0.5s ease;
+}
+.effect:hover{
+  transform: scale(1.1);
+  z-index: 100;
+  transition: all 0.5s ease-out !important;
+}
+.effect-two{
+  background-color: red;
+  position: absolute;
+  bottom: 25px;
+  left: 33px;
+  right: 0;
+  width: 30%;
+  height: 4px;
+  display: none;
+  animation: slide 0.5s ease-in-out ;
+  border-radius: 3px;
+
+}
+.effect:hover .effect-two{
+  display: block;
+}
+.done{
+  position: relative;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(-15px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.hotel-img-container{
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+.hotel-overly{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s ease;
+}
+.last-overly{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  clip-path: polygon(0 0, 70% 0, 90% 100%, 0% 100%);
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s ease;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hotel-img-container:hover .hotel-overly{
+  height: 100%;
+}
+.hotel-rooms{
+  object-fit: cover;
+}
+.last-img{
+  clip-path: polygon(0 0, 70% 0, 90% 100%, 0% 100%);
+}
+.hotel-memories-text:hover .hidden{
+  display: block;
+  border-bottom: 3px solid red;
+  transition: all 0.3s ease-in-out;
+}
+.hidden{
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.hotel-memories-text2:hover .hidden2{
+  display: block;
+  border-bottom: 3px solid red;
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden2{
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.hotel-memories-text3:hover .hidden3{
+  display: block;
+  border-bottom: 3px solid red;
+  transition: all 0.3s ease-in-out;
+}
+.hidden3{
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+.hotel-memories-text4:hover .hidden4{
+  display: block;
+  border-bottom: 3px solid red;
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden4{
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.container{
+  padding: 2em 4em;
+}
+.card-container > .slick-prev{
+  left:-45px ;
+}
+.card-container > .slick-next{
+  right:-45px ;
+}
+.datepicker{
+  background-color: #e7e4e4;
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  width: 65px;
+}
+.react-datepicker__header__dropdown{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0.5em;
+}
+.react-datepicker{
+  border: 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.react-datepicker__header {
+  border:0;
+  background-color: #fff;
+}
+.slide{
+  position: relative;
+  left: -50px;
+}
+.in ,.out, #adults{
+  padding: 0.8em 1em;
+}
+#adults{
+  width: 200px;
+}
+.swiper-pagination-progressbar{
+    width: 20% !important;
+    height: 4px !important;
+    left: 20em !important;
+    top: 32em !important;
+}
+.swiper-pagination-progressbar-fill{
+    background-color: rgb(255, 0, 0) !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+  transform: rotate(90deg) !important;
+  bottom: 50%;
+  left: 95% !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  background-color: #fff !important;
+}
+
+.hotel-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.MuiMenu-paper{
+  display: none;
+}
+.banner{
+  background: rgba(0, 0, 0,0.7)url(./assets/beach.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  height: 400px;
+}
+.hotel-swiper-slide{
+  width: auto !important;
+}
+/* the parent */
+.card-container .slick-list{
+    margin: 0 -20px !important;
+    padding: 2em 0 !important;
+}
+.hotel-logo{
+  margin-left: 6em;
+}
+.img-hover-zoom{
+  height: 300px;
+  overflow: hidden;
+}
+.meeting{
+  height: 100%;
+}
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+.MuiTabs-flexContainer{
+  justify-content: center;
+}
+
+
+
+/* media screen for small device thats mean phone not tab */
+@media screen and (min-width: 360px ) and (max-width: 600px){
+  .navbar-fixed{
+    display: none;
+  }
+  .grid{
+    width: 100%;
+    padding: 0;
+  }
+  .one, .three, .five, .six{
+    height: 150px;
+  }
+  .swiper-pagination-progressbar{
+    width: 30% !important;
+    height: 4px !important;
+    left: 7em !important;
+    top: 31em !important;
+  }
+  .MuiMenu-paper{
+    max-width: 100% !important;
+    width: 100% !important;
+    left: 0 !important;
+    box-shadow: none !important;
+    display: block;
+  }
+  .banner{
+    height: 100%;
+  }
+  /* .css-1wf8b0h-MuiTabs-flexContainer{
+    flex-direction: column !important;
+  } */
+  .in ,.out{
+   width: 100%;
+   box-sizing: border-box;
+  }
+  #adults{
+    width: 100%;
+  }
+  .hotel-logo{
+    width: 150px;
+    margin-left: 0em;
+  }
+  .MuiTabs-flexContainer{
+    justify-content: flex-start;
+  }
+}
